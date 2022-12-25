@@ -5,6 +5,8 @@ import { HomePage } from './HomePage';
 import { BlogPage } from './BlogPage';
 import { ProfilePage } from './ProfilePage';
 import { BlogPost } from './BlogPost';
+import { LogoutPage } from './LogoutPage'
+import { LoginPage } from './LoginPage'
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Route path=':slug' element={<BlogPost />} />
         </Route>
         <Route path='/profile' element={<ProfilePage />} />
+        <Route path='/login' element={<LoginPage />} />
+        <Route path='/logout' element={<LogoutPage />} />
         <Route path='*' element={<p>Not Found</p>} />
       </Routes>
     </HashRouter>
